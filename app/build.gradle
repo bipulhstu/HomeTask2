@@ -1,0 +1,104 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "29.0.3"
+    defaultConfig {
+        applicationId "com.bipulhstu.hometask2"
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0.1"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    dexOptions {
+        incremental true
+        javaMaxHeapSize "4g"
+        preDexLibraries true
+        dexInProcess = true
+    }
+
+    buildFeatures{
+        viewBinding true
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'com.google.android.material:material:1.2.1'
+    //custom design
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    //image loader
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    //circle image view
+    implementation 'com.github.smarteist:autoimageslider:1.3.2-appcompat'
+    //slider image
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    //custom otp view
+    implementation 'com.karumi:dexter:6.0.0'
+    //run time permission
+    implementation 'com.github.stfalcon:smsverifycatcher:0.3.2'
+    //otp reader
+    implementation 'com.github.Shashank02051997:FancyToast-Android:0.1.6'
+    //custom toast design
+
+    //retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.6.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.6.0'
+    implementation 'com.squareup.okhttp3:okhttp:4.2.1'
+    implementation 'com.chauthai.swipereveallayout:swipe-reveal-layout:1.4.1'
+    //swipe menu layout
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.19'
+    //gif image viewer
+
+    testImplementation 'junit:junit:4.13.1'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    //material library
+    implementation 'com.google.android.material:material:1.2.1'
+    //circleImageView library
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    //recyclerView wih loading animation library
+    implementation 'com.github.sharish:ShimmerRecyclerView:v1.3'
+    //for circle image view library
+    implementation 'com.mikhaellopez:circularimageview:4.2.0'
+    implementation 'com.diegodobelo.expandingview:expanding-view:0.9.4'
+
+
+
+    // for custom progress dialog
+    implementation 'cc.cloudist.acplibrary:library:1.2.1'
+
+    //for custom toast
+    implementation 'com.github.GrenderG:Toasty:1.4.2'
+
+    //Rx Java
+    //rxandroid
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.2'
+    implementation 'io.reactivex.rxjava2:rxjava:2.1.10'
+    //retrofit adapter for rxjava with add a maven dependency
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
+
+    //for architecture component
+    def lifecycle_version = "2.2.0"
+    // ViewModel
+    implementation "androidx.lifecycle:lifecycle-viewmodel:$lifecycle_version"
+    // LiveData
+    implementation "androidx.lifecycle:lifecycle-livedata:$lifecycle_version"
+
+}
+apply plugin: 'com.google.gms.google-services'

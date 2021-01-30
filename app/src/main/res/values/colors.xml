@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+
+    <color name="blue">#2E80F8</color>
+    <color name="orrange">#FF5722</color>
+    <color name="white">#FFFFFF</color>
+    <color name="greenDeep">#046107</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="yellow">#FFEB3B</color>
+    <color name="gray">#ACABAB</color>
+    <color name="green">#0CB600</color>
+
+    <color name="selected_menu_color">#FF7E1F</color>
+    <color name="colorA">#666666</color>
+    <color name="colorB">#FD8154</color>
+    <color name="colorD">#529CC5</color>
+    <color name="colorE">#97A99B</color>
+    <color name="colorF">#B69D74</color>
+    <color name="colorG">#FF6363</color>
+    <color name="colorS">#F4F7FA</color>
+    <color name="facebookBgColor">#3A559F</color>
+    <color name="googleBgColor">#4387EE</color>
+    <color name="fragmentBg">#EFF0F5</color>
+    <color name="circleBgCategories">#FF6527</color>
+    <color name="circleBgSelection">#3E98FF</color>
+    <color name="circleBgFreebies">#FAB802</color>
+    <color name="circleBgCoupon">#5BCEC7</color>
+    <color name="viewColor">#CFCDCD</color>
+    <color name="alertDialogBg">#EEECEC</color>
+    <color name="red">#FF0000</color>
+    <color name="typing">#FF36C44B</color>
+
+
+    <color name="grey_5">#f2f2f2</color>
+    <color name="grey_40">#999999</color>
+    <color name="grey_60">#666666</color>
+    <color name="grey_80">#37474F</color>
+
+
+</resources>

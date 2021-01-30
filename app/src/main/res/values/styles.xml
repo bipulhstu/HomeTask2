@@ -1,0 +1,52 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+    </style>
+
+    <!-- Application theme. -->
+    <style name="HomePageTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="colorPrimary">@color/colorB</item>
+        <item name="colorPrimaryDark">@color/colorB</item>
+        <item name="colorAccent">@color/colorB</item>
+    </style>
+
+    <!--    for alert dialog show animation-->
+    <style name="SlidingDialogAnimation">
+        <item name="android:windowEnterAnimation">@android:anim/slide_in_left</item>
+        <item name="android:windowExitAnimation">@android:anim/slide_out_right</item>
+    </style>
+    <!--    for alert dialog show animation-->
+    <style name="SlidingUpAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_up</item>
+        <item name="android:windowExitAnimation">@anim/slide_down</item>
+    </style>
+
+<!--    for make full screen alert dialog-->
+
+    <style name="DialogTheme" parent="android:Theme.Dialog">
+
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <!-- No backgrounds, titles or window float -->
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+    </style>
+
+
+
+    <style name="rippleTheme" >
+        <item name="colorControlHighlight">@color/colorB</item>
+    </style>
+
+
+    <style name="BottomSheet" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/BottomSheet</item>
+    </style>
+</resources>

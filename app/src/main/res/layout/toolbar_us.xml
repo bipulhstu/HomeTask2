@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFF"
+    app:titleTextColor="@color/black">
+
+    <ImageButton
+        android:id="@+id/backControl"
+        android:layout_width="?attr/actionBarSize"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:focusable="true"
+        android:src="@drawable/arrow_left_line"
+        android:theme="@style/rippleTheme"
+        android:tint="#252525" />
+
+    <TextView
+        android:id="@+id/toolbarText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update User"
+        android:textColor="#252525"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+</androidx.appcompat.widget.Toolbar>

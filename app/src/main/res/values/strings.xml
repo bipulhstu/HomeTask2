@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">HomeTask2</string>
+    <string name="proMessage">Please wait....</string>
+    <string name="proTitle">Loading</string>
+    <!-- Strings for On Boarding Screen -->
+    <string name="noInternetTitle">Unable to connect</string>
+    <string name="noInternetMsg">Please check your internet connection and retry.</string>
+    <string name="failedToLoadData">Failed to load data, please try again.</string>
+    <string name="noDataFound">No records found</string>
+    <string name="appExitTitle">Terminate app</string>
+    <string name="confirmPayment">Confirm Payment</string>
+    <string name="confirmPaymentMessage">Sure you want to pay from your wallet balance?</string>
+    <string name="logoutExitTitle">Logout</string>
+    <string name="appExitMessage">Do you want to terminate from app?</string>
+    <string name="logout_Text">Sure, you want to logout?</string>
+    <string name="expireTokenTitle">Session expired</string>
+    <string name="expireTokenMsg">Your session has been expired, please log in again.</string>
+
+</resources>

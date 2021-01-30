@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fragmentBg"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="@dimen/ten"
+        android:layout_marginEnd="40dp"
+        app:cardCornerRadius="@dimen/ten"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/ten">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/ten"
+                android:padding="5dp"
+                android:text="User Name"
+                android:textColor="@color/colorA"
+                android:textSize="@dimen/fourteen"
+                tools:ignore="MissingPrefix" />
+
+
+            <EditText
+                android:id="@+id/edt_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:inputType="textPersonName"
+                android:minHeight="@dimen/fieldHeight"
+                android:padding="@dimen/ten"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fourteen" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/ten"
+                android:padding="5dp"
+                android:text="User Email"
+                android:textColor="@color/colorA"
+                android:textSize="@dimen/fourteen"
+                tools:ignore="MissingPrefix" />
+
+
+            <EditText
+                android:id="@+id/edt_user_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:inputType="textEmailAddress"
+                android:minHeight="@dimen/fieldHeight"
+                android:padding="@dimen/ten"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fourteen" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/ten"
+                android:padding="5dp"
+                android:text="Phone number"
+                android:textColor="@color/colorA"
+                android:textSize="@dimen/fourteen"
+                tools:ignore="MissingPrefix" />
+
+
+            <EditText
+                android:id="@+id/edt_user_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:inputType="numberDecimal"
+                android:minHeight="@dimen/fieldHeight"
+                android:padding="@dimen/ten"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fourteen" />
+
+            <TextView
+                fontPath="font/gotham_bold.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten"
+                android:layout_marginEnd="@dimen/ten"
+                android:padding="5dp"
+                android:text="Password"
+                android:textColor="@color/colorA"
+                android:textSize="@dimen/fourteen"
+                tools:ignore="MissingPrefix" />
+
+
+            <EditText
+                android:id="@+id/edt_password"
+                fontPath="font/gotham_light.ttf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:minHeight="@dimen/fieldHeight"
+                android:padding="@dimen/ten"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fourteen"
+                tools:ignore="MissingPrefix" />
+
+            <TextView
+                fontPath="font/gotham_bold.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/ten"
+                android:layout_marginEnd="@dimen/ten"
+                android:padding="5dp"
+                android:text="Confirm Password"
+                android:textColor="@color/colorA"
+                android:textSize="@dimen/fourteen"
+                tools:ignore="MissingPrefix" />
+
+
+            <EditText
+                android:id="@+id/edt_confirm_password"
+                fontPath="font/gotham_light.ttf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:minHeight="@dimen/fieldHeight"
+                android:padding="@dimen/ten"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fourteen"
+                tools:ignore="MissingPrefix" />
+
+
+            <Button
+                android:id="@+id/btn_register"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/ten"
+                android:background="@drawable/bg_button"
+                android:fontFamily="sans-serif-light"
+                android:gravity="center"
+                android:minWidth="150dp"
+                android:minHeight="@dimen/fieldHeight"
+                android:padding="@dimen/ten"
+                android:text="Register"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

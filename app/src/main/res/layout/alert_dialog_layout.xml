@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_white_radius"
+            android:layout_marginEnd="@dimen/twentyFive"
+            android:layout_marginStart="@dimen/twentyFive"
+            android:id="@+id/relativeLayout">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sixteen"
+                android:fontFamily="sans-serif-light"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/twentyFive"
+                android:layout_centerHorizontal="true"
+                android:padding="@dimen/five"
+                tools:text="Canon EOS 250D"/>
+
+            <TextView
+                android:id="@+id/tv_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/fourteen"
+                android:fontFamily="sans-serif-light"
+                android:layout_below="@id/tv_title"
+                android:layout_centerHorizontal="true"
+                android:maxLines="10"
+                android:scrollbars="vertical"
+                android:nestedScrollingEnabled="true"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/ten"
+                android:padding="@dimen/five"
+                tools:text="Canon EOS 250D"/>
+
+            <Button
+                android:id="@+id/btn_ok"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="OK"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@android:color/holo_blue_light"
+                android:fontFamily="sans-serif-light"
+                android:background="@color/white"
+                android:layout_below="@+id/tv_message"
+                android:layout_marginTop="@dimen/ten"/>
+
+            <LinearLayout
+                android:id="@+id/ln_button_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_message"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/ten"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/btn_pos"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:textColor="@color/green"
+                    android:fontFamily="sans-serif-light"/>
+
+
+                <Button
+                    android:id="@+id/btn_neg"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:textColor="@color/red"
+                    android:fontFamily="sans-serif-light"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_image_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignTop="@+id/relativeLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-25dp"
+            android:background="@drawable/bg_circle">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/img_icon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/img_placeholder"
+                android:layout_centerInParent="true"
+                android:scaleType="fitCenter"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
